@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rutina de Mariano</title>
+<meta name="description" content="Plan semanal de entrenamiento con animaciones de cada ejercicio para la multifuncional Marcy MWM-4965SC.">
+<meta name="theme-color" content="#e8590c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23e8590c'/%3E%3Cpath d='M6 16h20M9 11v10M23 11v10M5 14v4M27 14v4' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap row">
+    <div>
+      <p class="kicker">Plan de entrenamiento</p>
+      <h1>Rutina de Mariano</h1>
+    </div>
+    <div class="tools">
+      <button class="iconbtn" id="anim" type="button" aria-pressed="false">⏸ Pausar</button>
+      <button class="iconbtn" id="theme" type="button" aria-label="Cambiar tema claro u oscuro">◐ Tema</button>
+    </div>
+  </div>
+</header>
+<nav class="tabs" aria-label="Días de la semana"><div class="wrap" id="tabs" role="tablist"></div></nav>
+<main class="wrap" id="main" tabindex="-1"></main>
+<footer class="wrap">
+  Basado en la rutina personalizada de Mariano · Multifuncional Marcy MWM-4965SC y caminadora.
+  Las animaciones son esquemáticas: ajusta asiento, poleas y peso a tu máquina y deja que la técnica mande sobre la carga.
+</footer>
+<div class="timer" id="timer" role="timer" aria-live="polite">
+  <div><span class="t" id="tval">0:00</span><small id="tlbl">Descanso</small></div>
+  <button type="button" id="tstop">Cerrar</button>
+</div>
+<script src="js/figures.js"></script>
+<script src="js/plan.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
